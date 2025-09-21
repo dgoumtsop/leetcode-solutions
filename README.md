@@ -1,2 +1,2 @@
 # Leetcode-Solutions
-My Leetcode solutions organized by topic and difficulty
+My Daily Leetcode problem-solving journey solutions organized by topic
