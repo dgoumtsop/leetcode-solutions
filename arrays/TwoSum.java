@@ -2,7 +2,7 @@ package arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-// Problem: Two Sum
+// Problem: Two Sum - Easy
 // Approach: HashMap to find complement
 // Time Complexity: O(n)
 // Space Complexity: O(n)
