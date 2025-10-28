@@ -1,5 +1,6 @@
 // Problem: Valid Palindrome
 // Approach: Two Pointers
+// move inward from both ends, skipp non-alphanumeric chars, compare lowercase letters
 // Time: O(n) | Space: O(1)
 
 class Solution {
