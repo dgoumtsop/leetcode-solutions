@@ -1,0 +1,20 @@
+**
+ * Group Anagrams - Sorting Solution
+ * 
+ * Time: O(m * n log n)
+ * Space: O(m)  HashMap stores m strings
+ */
+   class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String, List<String>> map = new HashMap<>();
+            for(String word : strs){
+                char[] chars = word.toCharArray();
+                Arrays.sort(chars);
+
+                String key = new String(chars);
+                map.putIfAbsent(key, new ArrayList<>());
+                map.get(key).add(word);
+            }
+            return new ArrayList<>(map.values());
+    }
+}
