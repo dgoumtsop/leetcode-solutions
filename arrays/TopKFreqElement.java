@@ -1,4 +1,8 @@
-// 
+// Problem: Top K Frequent Elements
+// Approach: Min Heap aka PriorityQueue
+// Count frequencies with HashMap, use min heap of size k to track k most frequent elements
+// Time Complexity: O(n log k) 
+// Space Complexity: O(n)
 
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
