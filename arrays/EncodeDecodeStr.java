@@ -4,8 +4,6 @@
 // During decoding, read the length, extract that many characters, and repeat.
 // Time Complexity: O(n), Space Complexity: O(n)
 
-
-
 public class Codec {
 
     // Encodes a list of strings to a single string.
