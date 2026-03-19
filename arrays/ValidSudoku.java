@@ -1,0 +1,28 @@
+// Problem : Check if a 9x9 Sudoku board is valid (no duplicates in rows, columns, or 3x3 boxes)
+// Approach: Use boolean arrays to track seen digits for each row, column, and box.
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+class Solution {
+    public boolean isValidSudoku(char[][] board) {
+        boolean[][] rows = new boolean[9][9];
+        boolean[][] cols = new boolean[9][9];
+        boolean[][] boxes = new boolean[9][9];
+        for(int r = 0; r < 9; r++){
+            for(int c = 0; c < 9; c++){
+                char val = board[r][c];
+                if(val == '.'){
+                    continue;
+                }
+                int num = val - '1';
+                int boxIndex = (r/3)*3 + (c/3);
+                if(rows[r][num] || cols[r][num] || boxes[boxIndex][num]){
+                    return false;
+                }
+                rows[r][num] = true;
+                cols[c][num] = true;
+                boxes[boxIndex][num] = true;
+            }
+        }
+          return true;
+    }
+}
