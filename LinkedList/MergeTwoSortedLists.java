@@ -1,3 +1,9 @@
+// Problem: Merge Two Sorted Lists
+// Approach: Dummy node, compare both lists, attach smaller node.
+// Attach remaining nodes after one list is exhausted.
+// Time: O(m + n)
+// Space: O(1)
+
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
        ListNode dummy = new ListNode();
